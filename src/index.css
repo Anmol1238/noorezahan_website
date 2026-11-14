@@ -1,0 +1,33 @@
+@import "tailwindcss";
+@import "./styles/tokens.css";
+
+@theme {
+  --color-noir: #0a0812;
+  --color-surface: #1a1421;
+  --color-elevated: #291f33;
+  --color-purple: #613894;
+  --color-violet: #ad94d1;
+  --color-pink: #eb6b9e;
+  --color-rose: #c28c80;
+  --color-gold: #c9a85c;
+  --color-champagne: #e6d4b5;
+  --color-pearl: #faf5f0;
+  --color-soft-pink: #f5c7d6;
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-ui: "DM Sans", system-ui, sans-serif;
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+.field {
+  min-height: 3rem;
+  border-radius: 14px;
+  border: 1px solid rgba(201, 168, 92, 0.28);
+  background: rgba(26, 20, 33, 0.8);
+  padding: 0.75rem 0.9rem;
+  color: var(--color-pearl);
+}

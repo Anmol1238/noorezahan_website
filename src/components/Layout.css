@@ -1,0 +1,8 @@
+.app-shell {
+  min-height: 100vh;
+  background: var(--noir);
+}
+
+.app-shell main {
+  overflow-x: clip;
+}

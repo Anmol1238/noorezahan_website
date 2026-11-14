@@ -1,0 +1,53 @@
+.noor-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 48px;
+  padding: 0.85rem 1.55rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-family: var(--font-ui);
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease), background 0.35s var(--ease), border-color 0.35s var(--ease);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.noor-btn--primary {
+  background: var(--gradient-primary);
+  color: var(--pearl);
+  box-shadow: 0 10px 30px rgba(97, 56, 148, 0.28);
+}
+
+.noor-btn--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 40px rgba(235, 107, 158, 0.22);
+}
+
+.noor-btn--secondary {
+  background: rgba(26, 20, 33, 0.72);
+  border-color: rgba(201, 168, 92, 0.45);
+  color: var(--pearl);
+  backdrop-filter: blur(10px);
+}
+
+.noor-btn--secondary:hover {
+  transform: translateY(-2px);
+  border-color: var(--gold);
+  box-shadow: 0 0 0 1px rgba(201, 168, 92, 0.25);
+}
+
+.noor-btn--ghost {
+  background: transparent;
+  border-color: rgba(250, 245, 240, 0.18);
+  color: var(--pearl);
+}
+
+.noor-btn--ghost:hover {
+  border-color: rgba(230, 212, 181, 0.55);
+  background: rgba(255, 255, 255, 0.04);
+}

@@ -1,0 +1,131 @@
+.legal {
+  padding: calc(var(--nav-h) + 2.5rem) 0 5rem;
+}
+
+.legal__hero {
+  max-width: 760px;
+  margin-bottom: 2.5rem;
+}
+
+.legal__updated {
+  margin: 0.75rem 0 0;
+  color: var(--champagne);
+  font-size: 0.9rem;
+}
+
+.legal__layout {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.legal__toc {
+  position: sticky;
+  top: calc(var(--nav-h) + 1rem);
+}
+
+.legal__toc-toggle {
+  display: none;
+  width: 100%;
+  min-height: 44px;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(201, 168, 92, 0.3);
+  background: var(--surface);
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+}
+
+.legal__toc nav {
+  display: grid;
+  gap: 0.45rem;
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(201, 168, 92, 0.18);
+  background: rgba(26, 20, 33, 0.7);
+}
+
+.legal__toc a {
+  font-size: 0.86rem;
+  color: rgba(250, 245, 240, 0.62);
+  padding: 0.35rem 0.4rem;
+  border-radius: 6px;
+}
+
+.legal__toc a.is-active,
+.legal__toc a:hover {
+  color: var(--pearl);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.legal__body {
+  max-width: 760px;
+}
+
+.legal-section {
+  padding: 1.5rem 0 1.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.legal-section h2 {
+  margin: 0 0 0.85rem;
+  font-family: var(--font-display);
+  font-size: 1.65rem;
+  font-weight: 550;
+}
+
+.legal-section p,
+.legal-section li {
+  color: rgba(250, 245, 240, 0.78);
+}
+
+.legal-section ul {
+  padding-left: 1.15rem;
+}
+
+.legal-section .note {
+  margin-top: 0.85rem;
+  padding: 0.85rem 1rem;
+  border-left: 2px solid var(--gold);
+  background: rgba(41, 31, 51, 0.55);
+  color: var(--champagne);
+  font-size: 0.92rem;
+}
+
+.legal__related {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.legal__related a {
+  color: var(--champagne);
+}
+
+@media (max-width: 860px) {
+  .legal__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .legal__toc {
+    position: static;
+  }
+
+  .legal__toc-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+
+  .legal__toc nav {
+    display: none;
+  }
+
+  .legal__toc nav.is-open {
+    display: grid;
+  }
+}
